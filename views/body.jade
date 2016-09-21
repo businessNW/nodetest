@@ -1,0 +1,8 @@
+extends layout
+block content
+    h1= message
+    h1= request.hostname
+    h1= 'hostname:'+request.hostname
+    h2= "path:"+request.path
+    h2= "cookies:"+request.cookies['SERVERID']
+    h2= "X-Forward-For:"+request.headers['x-forwarded-for']
